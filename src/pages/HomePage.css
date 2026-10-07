@@ -1,0 +1,24 @@
+.hero-pick-card { position: absolute; z-index: 2; right: max(26px,calc((100vw - 1148px)/2 + 26px)); bottom: 27px; width: 260px; min-height: 88px; padding: 10px; border: 1px solid rgba(255,255,255,.75); border-radius: 5px; display: flex; align-items: center; gap: 11px; color: #20332b; background: rgba(255,255,255,.96); box-shadow: 0 12px 35px rgba(15,34,22,.18); text-decoration: none; animation: rise-in .5s .2s both; }
+.hero-pick-card > img { width: 66px; height: 66px; flex: 0 0 auto; border-radius: 3px; object-fit: cover; }
+.hero-pick-card > div { min-width: 0; flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.hero-pick-card > div > span { color: #708a6c; font-size: 7px; font-weight: 700; }
+.hero-pick-card strong { color: #20332b; font: 500 16px/1.05 Fraunces,Georgia,serif; }
+.hero-pick-card small { color: #829087; font-size: 8px; }
+.hero-pick-card > svg { flex: 0 0 auto; color: #47785a; }
+@media (max-width: 640px) { .hero-pick-card { right: 14px; bottom: 14px; width: 215px; min-height: 73px; padding: 8px; gap: 8px; }.hero-pick-card > img { width: 53px; height: 53px; }.hero-pick-card strong { font-size: 13px; }.hero-pick-card > div > span { font-size: 6px; }.hero-pick-card small { font-size: 7px; } }
+
+.home-product-marquee { width: 100%; overflow: hidden; padding: 3px 0 16px; mask-image: linear-gradient(90deg,transparent 0,#000 3%,#000 97%,transparent 100%); }
+.home-product-track { width: max-content; display: flex; animation: native-grocery-drift 64s linear infinite; will-change: transform; }
+.home-product-group { display: flex; flex: 0 0 auto; align-items: stretch; gap: 14px; padding-right: 14px; }
+.home-product-group .product-card { width: 246px; min-width: 0; flex: 0 0 246px; display: flex; flex-direction: column; }
+.home-product-group .product-image-wrap { height: auto; aspect-ratio: 1.38 / 1; flex: 0 0 auto; }
+.home-product-group .product-card-info { min-height: 145px; flex: 1; display: flex; flex-direction: column; }
+.home-product-group .product-card-heading { min-height: 32px; align-items: flex-start; }
+.home-product-group .product-card-heading h3 { min-height: 2.6em; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 1.3; }
+.home-product-group .product-card-heading strong { flex: 0 0 auto; }
+.home-product-group .product-meta { min-height: 14px; }
+.home-product-group .add-to-bag { margin-top: auto; }
+.home-product-marquee:hover .home-product-track,.home-product-marquee:focus-within .home-product-track { animation-play-state: paused; }
+@keyframes native-grocery-drift { to { transform: translateX(-50%); } }
+@media (max-width: 640px) { .home-product-marquee { margin: 0 -1px; mask-image: linear-gradient(90deg,transparent 0,#000 2%,#000 98%,transparent 100%); }.home-product-track { animation-duration: 56s; }.home-product-group { gap: 9px; padding-right: 9px; }.home-product-group .product-card { width: 218px; flex-basis: 218px; }.home-product-group .product-image-wrap { aspect-ratio: 1.5 / 1; }.home-product-group .product-card-info { min-height: 142px; padding: 10px 9px; }.home-product-group .product-card-heading { min-height: 43px; flex-direction: column; gap: 3px; }.home-product-group .product-card-heading h3 { min-height: 2.4em; } }
+@media (prefers-reduced-motion: reduce) { .home-product-marquee { overflow-x: auto; mask-image: none; scrollbar-width: thin; }.home-product-track { animation: none; will-change: auto; } }

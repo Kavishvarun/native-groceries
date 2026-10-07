@@ -1,0 +1,46 @@
+.cart-page { width: min(1148px,100%); min-height: 540px; margin: 0 auto; padding: 48px 26px 64px; }
+.cart-heading { margin-bottom: 26px; display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; }
+.cart-heading h1,.order-confirmation h1 { margin: 9px 0 6px; color: #20332b; font: 500 42px/.99 Fraunces,Georgia,serif; }
+.cart-heading p { color: #6c7b70; font-size: 11px; }
+.cart-heading .text-link { margin-bottom: 4px; }
+.cart-layout { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(300px,.7fr); align-items: start; gap: 28px; }
+.cart-items { border-top: 1px solid #e4eae2; }
+.cart-list-heading { min-height: 45px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e8ede6; }
+.cart-list-heading h2,.checkout-title h2 { margin-top: 5px; color: #20332b; font: 500 21px Fraunces,Georgia,serif; }
+.cart-list-heading span { color: #78867c; font-size: 9px; }
+.cart-item { min-height: 124px; padding: 13px 0; border-bottom: 1px solid #e8ede6; display: grid; grid-template-columns: 92px minmax(0,1fr) auto; align-items: center; gap: 14px; }
+.cart-item > img { width: 92px; height: 92px; border-radius: 3px; object-fit: cover; background: #edf1e9; }
+.cart-item-main { min-width: 0; }
+.cart-item-category { color: #718c70; font-size: 8px; font-weight: 700; text-transform: uppercase; }
+.cart-item-main h3 { margin: 4px 0; color: #20332b; font: 700 12px Manrope,sans-serif; }
+.cart-item-main p { color: #849087; font-size: 8px; }
+.quantity-stepper { width: max-content; height: 29px; margin-top: 11px; border: 1px solid #e0e8dd; border-radius: 3px; display: flex; align-items: center; }
+.quantity-stepper button { width: 29px; height: 27px; border: 0; display: grid; place-items: center; color: #496c50; background: transparent; cursor: pointer; }.quantity-stepper button:hover:not(:disabled) { color: #234b37; background: #eff4eb; }.quantity-stepper button:disabled { opacity: .35; cursor: not-allowed; }
+.quantity-stepper > span { min-width: 26px; color: #20332b; font-size: 10px; text-align: center; }
+.cart-item-end { display: flex; flex-direction: column; align-items: flex-end; gap: 5px; }.cart-item-end > strong { color: #234b37; font-size: 11px; }.cart-item-end > span { color: #8b968d; font-size: 8px; }
+.remove-item { padding: 2px 0; border: 0; display: inline-flex; align-items: center; gap: 4px; color: #a46b5d; background: transparent; font-size: 8px; cursor: pointer; }.remove-item:hover { color: #984530; }
+.cart-back-link { margin-top: 17px; display: inline-flex; align-items: center; gap: 7px; color: #496c50; font-size: 9px; font-weight: 700; text-decoration: none; }.cart-back-link:hover { color: #d56e48; }
+.checkout-panel { padding: 20px; border: 1px solid #e4eae2; border-radius: 4px; background: #fbfcf9; }
+.checkout-title { margin-bottom: 13px; }.checkout-title h2 { margin-bottom: 0; }
+.checkout-field { margin-top: 11px; display: flex; flex-direction: column; gap: 5px; color: #59695f; font-size: 9px; font-weight: 600; }
+.checkout-field input,.checkout-field textarea { width: 100%; min-height: 36px; padding: 0 9px; border: 1px solid #e0e7df; border-radius: 3px; color: #20332b; background: #fff; font: 10px 'DM Sans',sans-serif; }.checkout-field textarea { min-height: 66px; padding: 8px 9px; resize: vertical; }.checkout-field input::placeholder,.checkout-field textarea::placeholder { color: #9ba69d; }.optional-label { margin-left: 5px; color: #9aa59b; font-size: 7px; font-weight: 500; }
+.brand-preferences { margin-top: 12px; border: 1px solid #e0e8dd; border-radius: 3px; background: #fff; }
+.brand-preferences-toggle { width: 100%; min-height: 40px; padding: 0 10px; border: 0; display: flex; align-items: center; gap: 7px; color: #315a3e; background: transparent; font: 700 9px 'DM Sans',sans-serif; text-align: left; cursor: pointer; }
+.brand-preferences-toggle > span { margin-left: auto; font-size: 15px; }
+.brand-preferences-toggle:hover { background: #f5f8f2; }
+.brand-preferences-panel { padding: 2px 10px 10px; border-top: 1px solid #e8ede6; }
+.brand-preferences-panel > p { margin: 9px 0; color: #77867b; font-size: 8px; line-height: 1.5; }
+.brand-preference-group { min-width: 0; margin: 9px 0 0; padding: 0; border: 0; }
+.brand-preference-group legend { margin-bottom: 5px; color: #59695f; font-size: 9px; font-weight: 700; }
+.brand-preference-options { display: flex; flex-wrap: wrap; gap: 5px 10px; }
+.brand-preference-options label { display: inline-flex; align-items: center; gap: 4px; color: #647369; font-size: 8px; cursor: pointer; }
+.brand-preference-options input { width: 13px; height: 13px; margin: 0; accent-color: #47785a; }
+.custom-brand-input { width: 100%; height: 30px; margin-top: 6px; padding: 0 8px; border: 1px solid #e3e9e1; border-radius: 3px; color: #20332b; background: #fff; font: 9px 'DM Sans',sans-serif; }
+.custom-brand-input::placeholder { color: #9ba69d; }
+.payment-choice { min-height: 48px; margin-top: 13px; padding: 8px 9px; border: 1px solid #dfe9dc; border-radius: 3px; display: flex; align-items: center; gap: 8px; background: #f5f8f2; }.payment-icon { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; color: #47785a; background: #e6f0e2; }.payment-choice > span:nth-child(2) { flex: 1; display: flex; flex-direction: column; gap: 3px; }.payment-choice strong { color: #2e4734; font-size: 9px; }.payment-choice small { color: #79877c; font-size: 8px; }.payment-selected { color: #47785a; }
+.order-totals { margin-top: 13px; border-top: 1px solid #e3e9e1; }.order-totals > div { min-height: 29px; display: flex; align-items: center; justify-content: space-between; color: #68776c; font-size: 9px; }.order-totals strong { color: #3b4b40; font-size: 9px; font-weight: 600; }.order-totals .grand-total { min-height: 41px; margin-top: 3px; border-top: 1px solid #e3e9e1; color: #20332b; font-size: 11px; font-weight: 700; }.grand-total strong { color: #234b37; font-size: 14px; }
+.delivery-hint { margin: 1px 0 9px; color: #74836f; font-size: 8px; }.checkout-error { margin: 0 0 9px; color: #a74b36; font-size: 9px; line-height: 1.5; }.place-order-button { width: 100%; min-height: 42px; }.secure-note { margin-top: 9px; display: flex; align-items: center; justify-content: center; gap: 5px; color: #859187; font-size: 8px; }
+.empty-cart { min-height: 310px; border-top: 1px solid #e4eae2; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }.empty-cart > span { width: 48px; height: 48px; margin-bottom: 12px; border-radius: 50%; display: grid; place-items: center; color: #47785a; background: #edf4e9; }.empty-cart h2 { margin: 0; color: #20332b; font: 500 23px Fraunces,Georgia,serif; }.empty-cart p { max-width: 340px; margin: 8px 0 15px; color: #6c7b70; font-size: 10px; line-height: 1.7; }.empty-cart .solid-button { text-decoration: none; }
+.order-confirmation { min-height: 450px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }.order-check { width: 50px; height: 50px; margin-bottom: 17px; border-radius: 50%; display: grid; place-items: center; color: #3e754c; background: #e7f1e3; }.order-confirmation h1 { margin: 10px 0; }.order-confirmation h1 em { color: #47785a; font-weight: 400; }.order-confirmation > p { max-width: 430px; margin: 5px 0 17px; color: #65756a; font-size: 11px; line-height: 1.8; }.continue-button { text-decoration: none; }
+@media (max-width: 800px) { .cart-layout { grid-template-columns: 1fr; gap: 20px; }.checkout-panel { max-width: none; }.cart-page { padding-top: 37px; } }
+@media (max-width: 520px) { .cart-page { padding: 32px 16px 44px; }.cart-heading { align-items: flex-start; flex-direction: column; gap: 10px; }.cart-heading h1 { font-size: 36px; }.cart-item { grid-template-columns: 70px minmax(0,1fr) auto; gap: 9px; }.cart-item > img { width: 70px; height: 76px; }.cart-item-main h3 { font-size: 10px; }.cart-item-main p { max-width: 150px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }.cart-item-end > strong { font-size: 9px; }.remove-item { font-size: 0; }.remove-item svg { width: 15px; height: 15px; }.checkout-panel { padding: 16px; }.order-confirmation h1 { font-size: 35px; } }
