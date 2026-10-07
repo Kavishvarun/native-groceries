@@ -296,6 +296,7 @@ app.post('/api/contact', async (request, response) => {
 
 export default app
 
-if (process.env.VERCEL !== '1') {
+const invokedPath = process.argv[1] ? resolve(process.argv[1]) : ''
+if (invokedPath === fileURLToPath(import.meta.url)) {
   app.listen(port, () => console.log(`Inventory API listening on http://localhost:${port}`))
 }
