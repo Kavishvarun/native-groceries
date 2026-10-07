@@ -66,3 +66,17 @@
   .contact-intro { padding-bottom: 22px; }.contact-layout { padding: 0 16px 40px; grid-template-columns: 1fr; gap: 22px; }.contact-details { display: grid; grid-template-columns: 1fr 1fr; gap: 15px 9px; }.contact-detail { gap: 7px; }.contact-detail>span { width: 28px; height: 28px; }.contact-detail>span svg { width: 15px; }.contact-detail strong,.contact-detail p { font-size: 8px; }.contact-photo { grid-column: 1/-1; height: 118px; }.contact-form { padding: 18px 14px; }.contact-form h2 { font-size: 21px; }.form-row { grid-template-columns: 1fr; gap: 0; }
 }
 @media (prefers-reduced-motion: reduce) { .about-gallery figure { animation: none; }.about-gallery img,.about-gallery-controls button { transition: none; }.about-gallery { scroll-behavior: auto; } }
+.customer-account-details { margin-top: 18px; display: flex; flex-direction: column; align-items: stretch; gap: 15px; }
+.customer-id-card { padding: 15px; border: 1px solid #dce8d8; border-radius: 4px; display: flex; flex-direction: column; gap: 7px; background: #f4f8f1; }
+.customer-id-card span { color: #728372; font-size: 8px; font-weight: 700; letter-spacing: .08em; }
+.customer-id-card strong { color: #234b37; font: 600 22px Fraunces,Georgia,serif; letter-spacing: .04em; }
+.auth-form .updates-opt-in,.customer-account-details .updates-opt-in { display: flex; flex-direction: row; align-items: flex-start; gap: 9px; color: #59695f; font-size: 9px; font-weight: 500; line-height: 1.6; cursor: pointer; }
+.updates-opt-in input { width: 15px; min-width: 15px; min-height: 15px; height: 15px; margin: 1px 0 0; accent-color: #47785a; }
+.customer-account-details .solid-button { width: 100%; }
+.account-signout { align-self: flex-start; margin-top: 16px; padding: 7px 0; border: 0; display: inline-flex; align-items: center; gap: 7px; color: #617166; background: transparent; font: 600 9px 'DM Sans',sans-serif; cursor: pointer; }
+.account-signout:hover { color: #234b37; }
+.auth-mode-toggle { padding: 0; border: 0; color: #234b37; background: transparent; font: 700 9px 'DM Sans',sans-serif; cursor: pointer; }
+.auth-mode-toggle:hover { text-decoration: underline; }
+.form-success { margin: 0; color: #397447; font-size: 9px; line-height: 1.6; }
+.auth-configuration-error { margin-top: 15px; padding: 10px; border: 1px solid #ecd8c7; border-radius: 3px; color: #85553a; background: #fff8f1; font-size: 9px; line-height: 1.6; }
+@media (max-width: 620px) { .customer-id-card strong { font-size: 20px; } }
