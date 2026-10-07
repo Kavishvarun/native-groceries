@@ -6,7 +6,6 @@ import AboutPage from './pages/AboutPage'
 import ContactPage from './pages/ContactPage'
 import CartPage from './pages/CartPage'
 import HomePage from './pages/HomePage'
-import LoginPage from './pages/LoginPage'
 import ProductsPage from './pages/ProductsPage'
 import { type Product } from './productData'
 import './App.css'
@@ -66,7 +65,6 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/products" element={<ProductsPage items={cart} onAdd={addQuantityToBag} />} />
           <Route path="/cart" element={<CartPage items={cart} onQuantityChange={updateQuantity} onOrderPlaced={() => setCart([])} />} />
-          <Route path="/login" element={<LoginPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>

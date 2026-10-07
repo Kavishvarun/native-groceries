@@ -24,7 +24,6 @@ export function SiteHeader({ cartCount }: { cartCount: number }) {
         </button>
         <nav className={`main-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Main navigation">
           {navLinks.map(({ to, label, end }) => <NavLink key={to} to={to} end={end} onClick={() => setMenuOpen(false)} className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>{label}</NavLink>)}
-          <NavLink className="login-link" to="/login" onClick={() => setMenuOpen(false)}>Log in</NavLink>
           <Link className="nav-cta" to="/products" onClick={() => setMenuOpen(false)}>Shop now <ArrowRight size={15} /></Link>
         </nav>
         <Link className="bag-link" to="/cart" aria-label={`Shopping bag, ${cartCount} items`}><ShoppingBasket size={18} /><span>{cartCount}</span></Link>
@@ -41,7 +40,7 @@ export function SiteFooter() {
           <Link className="brand footer-brand" to="/"><span className="brand-mark"><Leaf size={18} /></span><span className="brand-name">Native Groceries<span>.</span></span></Link>
           <p>Good food, grown close.<br />A little more local, every day.</p>
         </div>
-        <div className="footer-column"><h2>Find your way</h2><Link to="/about">Our story</Link><Link to="/products">Shop products</Link><Link to="/login">Store login</Link></div>
+        <div className="footer-column"><h2>Find your way</h2><Link to="/about">Our story</Link><Link to="/products">Shop products</Link></div>
         <div className="footer-column footer-contact"><h2>Say hello</h2><a href="mailto:hello@nativegroceries.in">hello@nativegroceries.in</a><a href="tel:+919655082236">+91 96550 82236</a><a href="https://wa.me/919655082236" target="_blank" rel="noreferrer">WhatsApp: +91 96550 82236</a><Link to="/contact">Visit our contact page <ArrowRight size={13} /></Link></div>
         <div className="footer-hours"><span className="footer-kicker">COME ON BY</span><strong>Mon-Sat, 8am-8pm</strong><span>Sunday, 9am-2pm</span><span>Thiruvannamalai, Tamil Nadu, India</span></div>
       </div>
