@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "api/[...route].ts": {
+      "includeFiles": "server/data/products.json"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

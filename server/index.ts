@@ -294,4 +294,8 @@ app.post('/api/contact', async (request, response) => {
   return response.status(201).json({ message: 'Contact message received.' })
 })
 
-app.listen(port, () => console.log(`Inventory API listening on http://localhost:${port}`))
+export default app
+
+if (process.env.VERCEL !== '1') {
+  app.listen(port, () => console.log(`Inventory API listening on http://localhost:${port}`))
+}
